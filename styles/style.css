@@ -282,7 +282,7 @@ _ibg > img {
 
 .first_page_block_child {
     width: 200px;
-    height: 150px;
+    border: solid 1px black;
     cursor: pointer;
     border-radius: 10px;
     transition: all 0.3s;
@@ -550,12 +550,12 @@ _ibg > img {
     max-height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     display: none;
     overflow-y: scroll;
     text-align: center;
     box-shadow: 0 0 20px black;
     cursor: default;
+    flex-direction: column;
 }
 
 .modal > img {
@@ -570,7 +570,10 @@ _ibg > img {
     font-size: 20px;
     font-weight: bold;
 }
+.modal > p{
+    max-width: 500px;
 
+}
 .modal_overlay_visible {
     opacity: 1;
     visibility: visible;
@@ -578,7 +581,7 @@ _ibg > img {
 }
 
 .modal_visible {
-    display: inline-block;
+    display: inline-flex;
 }
 
 @media only screen and (max-width: 700px) {
