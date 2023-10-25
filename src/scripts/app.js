@@ -151,3 +151,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     })
 });
+
+/////////////////////////////////////////////////////////////
+$callMe = document.querySelector('.call_me_button')
+
+$callMe.addEventListener('click', ()=>{
+    console.log('call')
+})
