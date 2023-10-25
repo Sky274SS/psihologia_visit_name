@@ -270,24 +270,36 @@ _ibg > img {
     font-size: 30px;
     text-transform: uppercase;
 }
-.first_page_name_about > div:last-child{
+
+.first_page_name_about > div:last-child {
     display: grid;
     justify-items: center;
     align-items: center;
 }
-.first_page_name_about > div > div:first-child{
+
+.first_page_name_about > div > div:first-child {
     padding: 5px;
 }
-.call_me_button{
+
+.call_me_button {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.7);
     background: rgba(4, 169, 1, 0.6);
     font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 10px;
-    cursor: pointer;
+    border-radius: 5px;
+    background: rgb(242, 219, 221);
     transition: all 1s;
+    padding: 5px 10px;
+    width: 150px;
+    height: 40px;
+    color: black;
 }
-.call_me_button:hover{
-    background: rgb(4, 169, 1);
+
+.call_me_button:hover {
+    background: rgba(4, 169, 1, 0.5);
     transition: all 1s;
     box-shadow: 0 0 5px black;
 }
@@ -481,7 +493,7 @@ _ibg > img {
 }
 
 /*----------------------------------------------------------------*/
-.education_container{
+.education_container {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -495,17 +507,18 @@ _ibg > img {
     padding: 10px;
 }
 
-.education_info > ul{
+.education_info > ul {
     font-weight: bold;
     padding: 10px;
 }
 
-.education_info > ul > li{
+.education_info > ul > li {
     font-weight: normal;
     list-style: circle outside;
     margin-left: 15px;
 }
-.education_info > ul > li:first-child{
+
+.education_info > ul > li:first-child {
     margin-top: 10px;
 }
 
@@ -528,22 +541,108 @@ _ibg > img {
     border-radius: 15px;
     box-shadow: 0 0 5px #000;
 }
+
 @media only screen and (max-width: 1046px) {
     .education_documents_diploma > img {
         max-width: 70vw;
     }
+
     .education_documents_certificate > img {
         max-width: 34vw;
     }
 }
+
 @media only screen and (max-width: 390px) {
     .education_documents_certificate {
         grid-template-columns: none;
     }
+
     .education_documents_certificate > img {
         max-width: 70vw;
     }
 }
+
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+.contacts_container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+}
+.contacts_form{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+.just-validate-error-label{
+    padding: 10px;
+
+}
+.contacts_form > label{
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.contacts_form > label > input{
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    padding: 0 20px;
+    width: 350px;
+    height: 50px;
+    font-family: inherit;
+    background: rgb(242, 219, 221);
+}
+.contacts_textarea{
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-family: inherit;
+    background: rgb(242, 219, 221);
+    width: 350px;
+}
+.contacts_button{
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 350px;
+    border-radius: 5px;
+    background: rgb(242, 219, 221);
+    transition: all 1s;
+}
+.contacts_button:hover {
+    background: rgba(4, 169, 1, 0.5);
+    transition: all 1s;
+    box-shadow: 0 0 5px black;
+}
+@media only screen and (max-width: 390px) {
+    .contacts_form{
+        width: 90vw;
+    }
+    .contacts_form > label > input{
+        width: 80vw;
+    }
+    .contacts_textarea{
+        width: 80vw;
+    }
+    .contacts_button{
+        width: 80vw;
+    }
+    .contacts_form > label{
+        padding: 10px 0;
+    }
+}
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+
+
 /*----------------------------------------------------------------*/
 .modal_overlay {
     z-index: 4;
@@ -593,10 +692,12 @@ _ibg > img {
     font-size: 20px;
     font-weight: bold;
 }
-.modal > p{
+
+.modal > p {
     max-width: 500px;
 
 }
+
 .modal_overlay_visible {
     opacity: 1;
     visibility: visible;

@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
+    <script defer src="src/libs/inputmask.min.js"></script>
+    <script defer src="src/libs/just-validate3.3.3.min.js"></script>
+    <script defer src="src/scripts/sendMail.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -46,7 +49,7 @@
                     <div>Психолог</div>
                     <div>
                         <div>Когнитивно-поведенчиский терапевт</div>
-                        <div class="call_me_button" title="Позже будет работать">Связаться</div>
+                        <a href="#contacts"><div class="call_me_button" title="Позже будет работать">Связаться</div></a>
                     </div>
                 </div>
             </div>
@@ -171,6 +174,38 @@
             <h1 class="about_title">Блог</h1>
         </div>
         <!--        end blog page-->
+        <div id="contacts" style="margin-bottom: 45px"></div>
+        <!--        start contacts page-->
+        <div class="contacts_container">
+            <h1 class="about_title">Контакты</h1>
+            <div class="form_container">
+                <form action="#" class="contacts_form" method="POST" enctype="multipart/form-data">
+                    <label class="contacts_label">
+                            <input class="input_name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
+                    </label>
+                    <label class="contacts_label">
+                        <input class="input_mail" type="email" data-validate-field="email" name="Email"
+                               placeholder="Введите email">
+                    </label>
+                    <label class="contacts_label">
+                        <input class="input_phone" type="tel" data-validate-field="tel" name="Телефон"
+                               placeholder="Введите телефон">
+                    </label>
+                    <label class="contacts_label">
+        <textarea class="contacts_textarea" name="Сообщение" id="" cols="30" rows="10"
+                  placeholder="Введите ваше сообщение"></textarea>
+                    </label>
+                    <button class="contacts_button">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <!--        end contacts page-->
+        <div id="price" style="margin-bottom: 45px"></div>
+        <!--        start price page-->
+        <div class="price_container">
+            <h1 class="about_title">Цены</h1>
+        </div>
+        <!--        end contacts page-->
 
         <div style="height: 1000px"></div>
     </main>
