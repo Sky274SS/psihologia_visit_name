@@ -278,6 +278,7 @@ _ibg > img {
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    opacity: 0.85;
 }
 
 .first_page_block_child {
@@ -344,6 +345,7 @@ _ibg > img {
     .first_page_block {
         grid-template-columns: none;
         margin-top: 35px;
+
     }
 
     .first_page_block_child {
