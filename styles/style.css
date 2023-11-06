@@ -814,9 +814,21 @@ _ibg > img {
     justify-items: center;
     align-items: center;
     text-align: center;
+    gap: 20px;
 }
 .price_info_container > h1{
-margin: 10px;
+    margin-top: 20px;
+}
+.price_info_container > h2{
+    padding: 20px;
+    background: rgb(242, 219, 221);
+    /*margin: 10px 0;*/
+    box-shadow: 0 0 3px black;
+    border-radius: 10px;
+    border: 1px solid #000;
+    gap: 10px;
+    font-weight: 600;
+    opacity: 0.8;
 }
 
 @media only screen and (max-width: 500px) {
