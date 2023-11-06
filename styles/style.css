@@ -5,6 +5,11 @@
     margin: 0;
     border: 0;
 }
+@font-face {
+    font-family: 'Sweet';
+    src: local('Sweet'),
+    url(../src/fonts/sweet.ttf);
+}
 
 @media (prefers-reduced-motion: no-preference) {
     :root {
@@ -260,8 +265,8 @@ _ibg > img {
 
 .first_page_name_intro {
     font-size: 60px;
-    font-weight: bold;
     text-align: right;
+    font-family: Sweet;
 }
 
 .first_page_name_about {
