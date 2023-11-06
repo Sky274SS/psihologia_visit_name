@@ -789,6 +789,13 @@ _ibg > img {
     gap: 15px;
     font-weight: 800;
     text-align: center;
+    opacity: 0.8;
+}
+.price_block:hover{
+    scale: 1.1;
+    box-shadow: 0 0 10px black;
+    opacity: 1;
+    z-index: 1;
 }
 .ico{
     max-width: 4vw;
