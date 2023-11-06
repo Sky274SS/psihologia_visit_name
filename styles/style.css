@@ -816,7 +816,7 @@ _ibg > img {
     text-align: center;
 }
 .price_info_container > h1{
-
+margin: 10px;
 }
 
 @media only screen and (max-width: 500px) {
