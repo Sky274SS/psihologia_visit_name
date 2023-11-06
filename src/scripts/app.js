@@ -154,7 +154,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /////////////////////////////////////////////////////////////
 $callMe = document.querySelector('.call_me_button')
+$blogShow = document.querySelector('.blog_show')
+$blogElementContainer = document.querySelector('.blog_element_container')
 
 $callMe.addEventListener('click', ()=>{
     console.log('call')
 })
+
+$blogShow.addEventListener('click', ()=>{
+    if ($blogShow.textContent === 'Скрыть'){
+        $blogShow.textContent = 'Показать'
+        $blogElementContainer.classList.add('blog_none')
+
+    }
+    else{
+        $blogShow.textContent = 'Скрыть'
+        $blogElementContainer.classList.remove('blog_none')
+    }
+})
+
