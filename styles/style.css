@@ -713,7 +713,7 @@ _ibg > img {
     box-shadow: 0 0 5px black;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 420px) {
     .contacts_form {
         width: 90vw;
     }
@@ -792,6 +792,8 @@ _ibg > img {
 }
 .ico{
     max-width: 4vw;
+    justify-items: start;
+    display: grid;
 }
 .price_block > div:not(:first-child){
     display: grid;
@@ -800,6 +802,10 @@ _ibg > img {
     align-items: center;
     gap: 10px;
 }
+.price_block > div:not(:first-child) > div:first-child{
+    justify-items: end;
+}
+
 @media only screen and (max-width: 500px) {
     .price_blocks{
 
