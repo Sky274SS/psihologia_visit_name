@@ -665,6 +665,7 @@ _ibg > img {
     background: rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     box-shadow: 0 0 5px black;
+    max-width: 90vw;
 }
 
 .just-validate-error-label {
