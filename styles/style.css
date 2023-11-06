@@ -789,11 +789,24 @@ _ibg > img {
     font-weight: 800;
     text-align: center;
 }
+.ico{
+    max-width: 4vw;
+}
+.price_block > div:not(:first-child){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
 @media only screen and (max-width: 500px) {
     .price_blocks{
 
         grid-template-columns: none;
 
+    }
+    .ico{
+        max-width: 8vw;
     }
 
 }
