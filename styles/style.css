@@ -802,7 +802,15 @@ _ibg > img {
     align-items: center;
     gap: 10px;
 }
+.price_info_container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.price_info_container > h1{
 
+}
 
 @media only screen and (max-width: 500px) {
     .price_blocks{
@@ -856,13 +864,13 @@ _ibg > img {
 
 .footer_img:first-child:hover {
     box-shadow: 0 0 10px #000;
-    background: #0088cc;
+    background: rgba(0, 136, 204, 0.6);
     opacity: 1;
 }
 
 .footer_img:last-child:hover {
     box-shadow: 0 0 10px #000;
-    background: #43d854;
+    background: rgba(67, 216, 84, 0.6);
 }
 
 .footer_img > a > img {
