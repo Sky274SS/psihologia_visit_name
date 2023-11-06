@@ -802,9 +802,7 @@ _ibg > img {
     align-items: center;
     gap: 10px;
 }
-.price_block > div:not(:first-child) > div:first-child{
-    justify-items: end;
-}
+
 
 @media only screen and (max-width: 500px) {
     .price_blocks{
@@ -858,20 +856,17 @@ _ibg > img {
 
 .footer_img:first-child:hover {
     box-shadow: 0 0 10px #000;
-    background: #597da3;
+    background: #0088cc;
     opacity: 1;
 }
 
 .footer_img:last-child:hover {
     box-shadow: 0 0 10px #000;
-    background: #d6249f;
-
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: #43d854;
 }
 
-.footer_img > img {
-    width: 22px;
-    height: 22px;
+.footer_img > a > img {
+    width: 40px;
 }
 
 .footer_bottom {
