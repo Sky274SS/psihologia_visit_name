@@ -5,6 +5,7 @@
     margin: 0;
     border: 0;
 }
+
 @font-face {
     font-family: 'Sweet';
     src: local('Sweet'),
@@ -51,11 +52,7 @@ html, body {
     color: #000;
     font-family: 'Roboto', sans-serif;
     background: rgb(242, 219, 219);
-    background: linear-gradient(357deg, rgba(242, 219, 219, 1) 0%, rgba(215, 255, 148, 1) 100%);
-    /*background: rgb(242,219,219);*/
-    /*background: linear-gradient(130deg, rgba(242,219,219,1) 0%, rgba(194,255,93,1) 100%);*/
-    /*!*background: rgb(242, 219, 221);*!*/
-    /*background: linear-gradient(130deg, rgba(242, 219, 221, 1) 0%, rgba(240, 230, 228, 1) 100%);*/
+    background: linear-gradient(0deg, rgba(242, 219, 219, 1) 0%, rgba(255, 235, 235, 0.7903536414565826) 50%, rgba(242, 219, 219, 1) 100%);
 }
 
 input, button, textarea {
@@ -125,6 +122,7 @@ _ibg > img {
     z-index: 3;
     display: grid;
     align-items: center;
+    justify-items: center;
     font-size: 14px;
     position: fixed;
     left: 0;
@@ -133,6 +131,10 @@ _ibg > img {
     bottom: 0;
     height: 50px;
     margin-bottom: 20px;
+}
+
+.nav_container {
+
 }
 
 .header > div > nav {
@@ -249,6 +251,7 @@ _ibg > img {
     gap: 5px;
     justify-items: center;
     align-items: center;
+    max-width: 1046px;
 }
 
 .first_page_name {
@@ -273,6 +276,8 @@ _ibg > img {
     display: grid;
     justify-items: center;
     align-items: center;
+    font-family: Sweet;
+
 }
 
 .first_page_name_about > div:first-child {
@@ -291,6 +296,7 @@ _ibg > img {
 }
 
 .call_me_button {
+    font-family: Roboto;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -400,6 +406,10 @@ _ibg > img {
 
     .first_page_image > img {
         width: 250px;
+    }
+
+    .first_page_name_about {
+        gap: 15px;
     }
 }
 
@@ -534,10 +544,12 @@ _ibg > img {
 
 .education_documents_diploma > img {
     max-width: 55vw;
+    max-width: 800px;
     margin: 10px;
     border-radius: 15px;
     box-shadow: 0 0 5px #000;
 }
+
 
 .education_documents_certificate {
     display: grid;
@@ -601,9 +613,36 @@ _ibg > img {
     margin-top: 20px;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.5);
+    opacity: .8;
+    min-width: 50vw;
+    text-align: center;
+
 }
 
-.blog_element > img {
+.blog_element_title:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    scale: 1.1;
+    opacity: 1;
+}
+
+.blog_element_content {
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+
+}
+.blog_element_content > h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+.blog_element_img {
     max-width: 700px;
     border-radius: 10px;
     border: solid 1px rgba(0, 0, 0, 0.5);
@@ -612,7 +651,8 @@ _ibg > img {
 .blog_element_text {
 
 }
-.blog_show{
+
+.blog_show {
     background: rgb(242, 219, 221);
     padding: 10px 30px;
     border: solid 1px rgba(0, 0, 0, 0.5);
@@ -622,16 +662,19 @@ _ibg > img {
     text-align: center;
     transition: all 0.5s;
 }
-.blog_show:hover{
+
+.blog_show:hover {
     background: rgba(242, 219, 221, 0.5);
     box-shadow: 0 0 5px black;
     transition: all 0.5s;
 }
-.blog_none{
+
+.blog_none {
     display: none;
 }
+
 @media only screen and (max-width: 800px) {
-    .blog_element > img {
+    .blog_element_img  {
         width: 80vw;
     }
 }
@@ -645,19 +688,23 @@ _ibg > img {
     gap: 10px;
     cursor: default;
 }
-.contacts_me_container{
+
+.contacts_me_container {
     display: grid;
     gap: 10px;
 }
-.contacts_me_container > div{
+
+.contacts_me_container > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
 }
-.contacts_me_container > div > h1{
+
+.contacts_me_container > div > h1 {
     font-weight: 700;
 }
-.form_questions{
+
+.form_questions {
     font-size: 20px;
     font-weight: 800;
 }
@@ -741,7 +788,7 @@ _ibg > img {
 }
 
 /*----------------------------------------------------------------*/
-.price_container{
+.price_container {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -749,39 +796,46 @@ _ibg > img {
     gap: 10px;
     cursor: default;
 }
-.price_element_container{
+
+.price_element_container {
     display: grid;
     justify-items: center;
     align-items: center;
     padding: 10px;
     gap: 10px;
 }
-.price_consult_container{
+
+.price_consult_container {
     display: grid;
     gap: 10px;
     justify-items: center;
     align-items: center;
 }
-.price_consult_container > div{
+
+.price_consult_container > div {
     display: grid;
     align-items: center;
     justify-items: center;
     gap: 10px;
 }
-.price_consult_container > div > h1{
+
+.price_consult_container > div > h1 {
     font-weight: 800;
     text-align: center;
 }
-.price_element_container > div > h1{
+
+.price_element_container > div > h1 {
     font-weight: 800;
 
 }
-.price_blocks{
+
+.price_blocks {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
-.price_block{
+
+.price_block {
     display: grid;
     min-height: 100px;
     box-shadow: 0 0 3px black;
@@ -796,35 +850,42 @@ _ibg > img {
     text-align: center;
     opacity: 0.8;
 }
-.price_block:hover{
+
+.price_block:hover {
     scale: 1.1;
     box-shadow: 0 0 10px black;
     opacity: 1;
     z-index: 1;
 }
-.ico{
+
+.ico {
     max-width: 4vw;
+    max-width: 52px;
     justify-items: start;
     display: grid;
 }
-.price_block > div:not(:first-child){
+
+.price_block > div:not(:first-child) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
     gap: 10px;
 }
-.price_info_container{
+
+.price_info_container {
     display: grid;
     justify-items: center;
     align-items: center;
     text-align: center;
     gap: 20px;
 }
-.price_info_container > h1{
+
+.price_info_container > h1 {
     margin-top: 20px;
 }
-.price_info_container > h2{
+
+.price_info_container > h2 {
     padding: 20px;
     background: rgb(242, 219, 221);
     /*margin: 10px 0;*/
@@ -837,16 +898,18 @@ _ibg > img {
 }
 
 @media only screen and (max-width: 500px) {
-    .price_blocks{
+    .price_blocks {
 
         grid-template-columns: none;
 
     }
-    .ico{
+
+    .ico {
         max-width: 8vw;
     }
 
 }
+
 /*----------------------------------------------------------------*/
 .footer {
     margin-top: 20px;
