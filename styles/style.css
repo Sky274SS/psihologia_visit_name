@@ -909,6 +909,69 @@ _ibg > img {
     }
 
 }
+/*----------------------------------------------------------------*/
+.reviews_container{
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+.reviews_blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.reviews_block{
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(242, 219, 221);
+    border: 1px solid #000;
+    box-shadow: 0 0 3px black;
+    margin: 0 5px;
+
+}
+.reviews_block > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews_img{
+     width: 260px;
+     border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+ }
+.reviews_title{
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+.reviews_description{
+text-align: center;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 950px) {
+    .reviews_img{
+        width: 25vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .reviews_img{
+        width: 50vw;
+    }
+    .reviews_blocks{
+        grid-template-columns: none;
+    }
+    .reviews_block{
+        margin: 0 15px;
+    }
+}
 
 /*----------------------------------------------------------------*/
 .footer {
